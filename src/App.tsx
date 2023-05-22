@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import './Styles.css'
+
 
 import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
 import NotificationPage from './pages/NotificationPage';
 import Chart from './pages/Chart';
 import ECommerce from './pages/Dashboard/ECommerce';
+import MainPage from './pages/Dashboard/MainPage';
 import FormElements from './pages/Form/FormElements';
 import FormLayout from './pages/Form/FormLayout';
 import Profile from './pages/Profile';
@@ -48,6 +51,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<ECommerce />} />
+        <Route path="/mainpage" element={<MainPage />} />
         <Route path="/calendar" element={<NotificationPage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/studentregistration" element={<StudentRegistration />} />
