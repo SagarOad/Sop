@@ -5,7 +5,7 @@ const StudentCard = () => {
         <div className="mx-auto">
           <img
             className="mx-auto h-[120px] w-[128px] rounded-md border-2 object-cover object-top"
-            src="https://www.bbc.co.uk/staticarchive/afbe08f01d60949b3e3c498b00a5324bfe1ba0c5.jpg"
+            src="https://media.istockphoto.com/id/1139495117/photo/facing-my-future-with-confidence.jpg?b=1&s=612x612&w=0&k=20&c=0IxGuRpfxxEdRZDAH5y1gpcRU5saje8EUKNlKPgKv-g="
           />
         </div>
         <h2 className="my-3 text-center text-[28px] font-bold text-black dark:text-white">
