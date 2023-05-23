@@ -1,6 +1,6 @@
 import Breadcrumb from '../components/Breadcrumb';
 import DefaultLayout from '../layout/DefaultLayout';
-import { MdNotificationsActive } from 'react-icons/md';
+// import { MdNotificationsActive } from 'react-icons/md';
 import Data from '../NotificationData';
 
 const NotificationPage = () => {
@@ -20,7 +20,7 @@ const NotificationPage = () => {
                 <div className="flex border-b border-stroke dark:border-strokedark">
                   <div className="gap-03 flex items-center p-2.5 xl:p-5">
                     <div className="flex-shrink-0">
-                      <MdNotificationsActive className="text-[40px] text-[#00A651]" />
+                      {/* <MdNotificationsActive className="text-[40px] text-[#00A651]" /> */}
                     </div>
                   </div>
 

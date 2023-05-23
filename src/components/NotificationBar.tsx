@@ -1,10 +1,4 @@
-import React from 'react';
-import BrandOne from '../images/brand/brand-01.svg';
-import BrandTwo from '../images/brand/brand-02.svg';
-import BrandThree from '../images/brand/brand-03.svg';
-import BrandFour from '../images/brand/brand-04.svg';
-import BrandFive from '../images/brand/brand-05.svg';
-import { MdNotificationsActive } from 'react-icons/md';
+// import { MdNotificationsActive } from 'react-icons/md';
 
 const NotificationBar = () => {
   return (
@@ -14,7 +8,7 @@ const NotificationBar = () => {
         <div className="flex border-b border-stroke dark:border-strokedark">
           <div className="flex items-center gap-03 p-2.5 xl:p-5">
             <div className="flex-shrink-0">
-              <MdNotificationsActive className="text-[40px] text-[#00A651]" />
+              {/* <MdNotificationsActive className="text-[40px] text-[#00A651]" /> */}
             </div>
           </div>
 

@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { MdDeleteOutline } from 'react-icons/Md';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
+// import { MdDeleteOutline } from 'react-icons/Md';
+// import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 
 const DropdownMessage = () => {
@@ -49,7 +49,7 @@ const DropdownMessage = () => {
           <span className="absolute -z-1 inline-flex h-full w-full animate-ping rounded-full bg-meta-1 opacity-75"></span>
         </span>
 
-        <AiOutlineShoppingCart className="text-[23px]" />
+        {/* <AiOutlineShoppingCart className="text-[23px]" /> */}
       </Link>
 
       {/* <!-- Dropdown Start --> */}
@@ -68,7 +68,7 @@ const DropdownMessage = () => {
           <div className='w-[80%]'>
             <div className='flex justify-between text-[18px] font-extrabold'>
                <h1>Product 1</h1>
-               <MdDeleteOutline className="text-[23px]" />
+               {/* <MdDeleteOutline className="text-[23px]" /> */}
             </div>
             <div className='flex justify-between mt-2'>
               <p>Product Description</p>
