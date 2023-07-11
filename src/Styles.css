@@ -2,3 +2,49 @@
     background: rgb(0,166,81);
     background: linear-gradient(322deg, rgba(0,166,81,1) 0%, rgba(82,249,163,1) 82%);
 }
+
+.student-text {
+    color: rgb(0,166,81);
+    color: linear-gradient(322deg, rgba(0,166,81,1) 0%, rgba(82,249,163,1) 82%);
+}
+
+.span-timer {
+    font-size: 22px;
+}
+
+.dashboard-banner {
+    background: #E9E9E9;
+}
+.scardbg {
+   background-image: url(../src/assets//scardbg.png);   
+}
+
+.green-gradient {
+    background: rgb(242,215,53);
+background: linear-gradient(270deg, rgba(242,215,53,1) 0%, rgba(76,194,107,1) 100%);
+}
+
+.blue-gradient {
+    background: rgb(123,203,254);
+background: linear-gradient(180deg, rgba(123,203,254,1) 6%, rgba(62,179,255,1) 81%);
+}
+
+.dark-blue {
+    background-color: #016db3;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.content.show {
+    height: auto;
+    max-height: 999px;
+    transition: all 0.5s ease-in;
+}
+
+.bg-\[\#E7E7E7\] {
+    border: 1px solid #dbdbdb;
+}

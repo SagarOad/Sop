@@ -1,27 +1,26 @@
-// import { MdNotificationsActive } from 'react-icons/md';
+import { MdNotifications } from 'react-icons/md';
 
 const NotificationBar = () => {
   return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-8">
-     <div>
-      <div className="flex flex-col">
-        <div className="flex border-b border-stroke dark:border-strokedark">
-          <div className="flex items-center gap-03 p-2.5 xl:p-5">
-            <div className="flex-shrink-0">
-              {/* <MdNotificationsActive className="text-[40px] text-[#00A651]" /> */}
-            </div>
-          </div>
+    <div className="col-span-12 rounded-sm border border-stroke bg-[#faebd7] p-2 shadow-default  xl:col-span-8">
+      <div className="bg-green py-6">
+        <h1 className="text-white text-[38px] text-center">MY NOTIFICATION</h1>
+      </div>
 
-          <div className="grid-cols-10 p-2.5 xl:p-5">
-            <h2 className="text-black text-[20px] font-bold dark:text-white">IMPORTANT NOTICE</h2>
-            <p className="text-black text-[18px] mt-1 dark:text-white">
-              Dear Student, Learning material can be uploaded on Monday, Sorry
-              for inconvenience
-            </p>
-          </div>
+      <div className="mb-2 flex mt-6">
+        <div className="mr-2 flex items-center justify-center text-[38px]">
+          <MdNotifications className="text-green text-[48px]" />
+        </div>
+        <div>
+          <h1 className="w-[165px] bg-meta-6 text-[16px] font-medium text-black">
+            IMPORTANT NOTICE
+          </h1>
+          <p className="mt-1 text-[16px] text-black">
+            Dear Student, Learning material can be uploaded on Monday, Sorry for
+            inconvenience
+          </p>
         </div>
       </div>
-     </div>
     </div>
   );
 };

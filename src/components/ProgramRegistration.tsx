@@ -6,6 +6,7 @@ const ProgramRegistration = () => {
   return (
     <DefaultLayout>
       <Breadcrumb pageName="Student Registraion For SOP Program" />
+      <div className='p-4 md:p-6 2xl:p-10'>
       <RegistrationButtons />
       <div className="mx-auto items-center justify-center">
         <h3 className="mt-6 font-medium text-black dark:text-white">
@@ -148,6 +149,7 @@ const ProgramRegistration = () => {
         <button className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray">
           Submit
         </button>
+      </div>
       </div>
     </DefaultLayout>
   );

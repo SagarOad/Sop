@@ -9,7 +9,7 @@ const NotificationPage = () => {
       <Breadcrumb pageName="My Notifications" />
 
       {/* <!-- ====== Calendar Section Start ====== --> */}
-      <div className="w-full max-w-full rounded-sm shadow-default dark:border-strokedark dark:bg-boxdark">
+      <div className="w-full p-4 md:p-6 2xl:p-10 max-w-full rounded-sm shadow-default dark:border-strokedark dark:bg-boxdark">
         {Data.map((data) => (
           <div
             key={data.id}

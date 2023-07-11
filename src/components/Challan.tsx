@@ -7,6 +7,7 @@ const Challan = () => {
   return (
     <DefaultLayout>
       <Breadcrumb pageName="Student Registraion For SOP Program" />
+      <div className='p-4 md:p-6 2xl:p-10'>
       <RegistrationButtons />
       <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-2">
         <div className="col-span-12 flex justify-center rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
@@ -27,6 +28,7 @@ const Challan = () => {
             src="https://play-lh.googleusercontent.com/9-0wlkGycWAJRsuQ-p_bMqDGE0liYgihxKka0PtRjxqEiRVkDKaROEyFxYg520lLbpk=w600-h300-pc0xffffff-pd"
           />
         </div>
+      </div>
       </div>
     </DefaultLayout>
   );

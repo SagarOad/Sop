@@ -27,7 +27,12 @@ import StudentRegistration from './components/StudentRegistration';
 import ProgramRegistration from './components/ProgramRegistration';
 import Challan from './components/Challan';
 import Verification from './components/Verification';
-
+import CertificateUpload from './components/CertificateUpload'
+import ChooseSubjects from './components/ChooseSubjects';
+import ChooseChapters from './components/ChooseChapters';
+import StartQuiz from './components/StartQuiz';
+import QuizPaper from './components/QuizPaper';
+import Guide from './components/Guide';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -75,6 +80,14 @@ function App() {
         <Route path="/programregistration" element={<ProgramRegistration />} />
         <Route path="/payment" element={<Challan />} />
         <Route path="/verification" element={<Verification />} />
+        <Route path="/certificateupload" element={<CertificateUpload />} />
+        <Route path="/choosesubject" element={<ChooseSubjects />} />
+        <Route path="/choosechapters" element={<ChooseChapters />} />
+        <Route path="/startquiz" element={<StartQuiz />} />
+        <Route path="/quizpaper" element={<QuizPaper />} />
+        <Route path="/guide" element={<Guide />} />
+
+        
       </Routes>
     </>
   );

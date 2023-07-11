@@ -1,101 +1,141 @@
-import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Logo from '../../assets/Logo1.png';
+import authBanner from '../../assets/Group.png';
+import { VscAccount } from 'react-icons/vsc';
+import { AiOutlineEyeInvisible } from 'react-icons/ai';
+import { useState, useRef, useEffect, useContext } from 'react';
+import AuthContext from '../../context/AuthProvider';
+
+import axios from '../../api/axios';
+const LOGIN_URL = '/login';
 
 const SignIn = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const { setAuth } = useContext(AuthContext);
+  const userRef = useRef();
+  const errRef = useRef();
 
-  async function signIn() {
-    const item = { email, password };
-    console.warn(item);
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [errMsg, setErrMsg] = useState();
+  const [success, setSuccess] = useState();
 
-    let result = await fetch(
-      'http://192.168.18.244/sopstudentnewbackend/login',
-      {
-        method: 'POST',
-        body: JSON.stringify(item),
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
+  useEffect(() => {
+    setErrMsg('');
+  }, [email, password]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+        LOGIN_URL,
+        JSON.stringify({ email, password }),
+        {
+          headers: { 'Content-Type': 'application/json' },
+          withCredentials: true,
+        }
+      );
+      console.log(JSON.stringify(response?.data));
+      const accessToken = response?.data?.token;
+      setAuth({ email, password, accessToken });
+      setEmail('');
+      setPassword('');
+      setSuccess(true);
+    } catch (err) {
+      if (!err.response) {
+        setErrMsg('No Server Response');
+      } else if (err.response?.status === 400) {
+        setErrMsg('Missing email or password');
+      } else if (err.response?.status === 401) {
+        setErrMsg('Unauthorized');
+      } else if (err.response?.status === 404) {
+        console.log('Server stopped working');
+      } else {
+        setErrMsg('Login failed');
       }
-    );
-    result = await result.json();
-    console.warn('result', result);
-  }
+      userRef.current.focus();
+    }
+  };
+
   return (
-    <div className='flex h-[100vh]'>
-      <div className="auth-banner flex w-[50%] items-center justify-center p-4 sm:p-12.5 xl:p-17.5">
+    <>
+      {success ? (
         <div>
-          <img
-            src="https://studentofpakistan.com/images/sop.png"
-            className="mb-[12px] w-[120px]"
-          />
-          <h1 className="font-medium text-[60px] xl:text-[100px] leading-[80px] xl:leading-[120px] text-white dark:text-white">
-            Students Of{''}
-            <span className="font-bold text-[#00A651]"> Pakistan</span>
-          </h1>
-          <img
-            src="https://studentofpakistan.com/images/farsi.png"
-            className="my-8 w-[180px]"
-          />
-          <h2 className="w-[350px] p-4 text-[30px] font-bold font-medium text-white text-black dark:text-white">
-            <span className="bg-[#00A651] p-3">I HAVE TO GROW</span>
-          </h2>
+          <h1>You are logged in!</h1>
+          <br />
+          <p>
+            <a href="#">Go to Home</a>
+          </p>
         </div>
-      </div>
-      <div className="rounded-sm border w-[50%] border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-        <div className="w-full border-stroke dark:border-strokedark xl:border-l-2">
-          <div className='flex h-[100vh] justify-center items-center'>
-          <div className="w-full p-4 sm:p-12.5 xl:p-17.5">
-            <h1 className="mb-9 text-[18px] xl:text-[28px] font-bold text-black dark:text-white">
-              Sign In
-            </h1>
+      ) : (
+        <div className="flex h-auto py-16 px-6 md:px-16 lg:h-[100vh] lg:py-0 lg:px-36">
+          <div className="block w-[100vw] items-center justify-between rounded-sm bg-white lg:flex">
+            <div className="w-auto bg-[#F5F5F5] py-12 px-3 shadow-lg md:px-8 lg:w-[40%]">
+              <img className="mx-auto w-28" a lt="Logo" src={Logo} />
+              <h1 className="my-3 text-center text-[28px]">Log in</h1>
 
-            <div className="w-[100%]">
-              <label className="mb-4 block text-[18px] font-medium text-black dark:text-white">
-                Email:
-                <input
-                  type="text"
-                  placeholder="Enter your Email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  id="email"
-                  className="mt-2 w-full rounded-lg border border-stroke bg-transparent py-2 xl:py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
-                ></input>
-              </label>
+              <div className="w-[100%]">
+                <label className="block text-[18px] font-medium text-black dark:text-white">
+                  <div className="mt-3 flex h-16 items-center justify-between rounded-lg border-l-8 border-stroke border-l-red bg-white px-6 outline-none drop-shadow-md">
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      id="email"
+                      ref={userRef}
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={email}
+                      required
+                      className="w-full border-r-[1px] border-[#848484] py-2 text-[#848484]"
+                    ></input>
+                    <VscAccount className="ml-5 text-[32px] font-thin text-[#848484]" />
+                  </div>
+                </label>
 
-              <label className="mb-4 block text-[18px] font-medium text-black dark:text-white">
-                Password:
-                <input
-                  type="password"
-                  placeholder="Enter Password"
-                  onChange={(e) => setPassword(e.target.value)}
-                  id="password"
-                  className="mt-2 w-full rounded-lg border border-stroke bg-transparent py-2 xl:py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
-                ></input>
-              </label>
-            </div>
-
-            <NavLink to="/mainpage" className="mt-2 ">
-              <div className="cursor-pointer rounded-lg text-center border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90w-full text-[20px] cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90">
-              Sign In
+                <label className="block text-[18px] font-medium text-black dark:text-white">
+                  <div className="mt-3 flex h-16 items-center justify-between rounded-lg border-l-8 border-stroke border-l-red bg-white px-6 outline-none drop-shadow-md">
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      id="password"
+                      onChange={(e) => setPassword(e.target.value)}
+                      value={password}
+                      className="w-full border-r-[1px] border-[#848484] py-2 text-[#848484]"
+                    ></input>
+                    <AiOutlineEyeInvisible className="ml-5 text-[32px] font-thin text-[#848484]" />
+                  </div>
+                </label>
               </div>
-            </NavLink>
 
-            <div className="mt-6 text-center">
-              <p className='text-[20px]'>
-                Don’t have any account?{' '}
-                <Link to="/auth/signup" className="text-primary">
+              <NavLink to="/mainpage" className="mt-2 ">
+                <button
+                  onClick={handleSubmit}
+                  className="mt-6 w-full cursor-pointer rounded-lg border bg-green  py-3 text-center text-[20px] text-white transition hover:bg-opacity-90 md:mt-3 md:py-4"
+                >
+                  Log In
+                </button>
+              </NavLink>
+
+              <Link to="/auth/signup" className="">
+                <button className="mt-3 w-full cursor-pointer rounded-lg border bg-green py-3 text-center text-[20px] text-white transition hover:bg-opacity-90 md:py-4">
                   Sign Up
-                </Link>
-              </p>
+                </button>
+              </Link>
+
+              <div className="mt-3 text-center">
+                <p className="text-[20px] text-[#848484]">
+                  Forgot your password?
+                </p>
+              </div>
+            </div>
+
+            <div className="hidden w-auto lg:block lg:w-[40%]">
+              <img src={authBanner} alt="banner" />
             </div>
           </div>
-          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

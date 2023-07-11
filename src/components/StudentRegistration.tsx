@@ -10,6 +10,8 @@ const StudentRegistration = () => {
   return (
     <DefaultLayout>
       <Breadcrumb pageName="Student Registraion For SOP Program" />
+      <div className='flex'>
+      <div className='p-4 md:p-6 2xl:p-10 w-[50%]'>
        <RegistrationButtons />
        <div className="mx-auto items-center justify-center">
         <h3 className="mt-6 font-medium text-black dark:text-white">
@@ -152,6 +154,11 @@ const StudentRegistration = () => {
         <button className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray">
           Submit
         </button>
+      </div>
+      </div>
+      <div className='w-[50%] flex justify-center items-center'>
+      <img className='w-[500px]' src='https://us.123rf.com/450wm/rastudio/rastudio2011/rastudio201100264/159210258-registration-abstract-concept-vector-illustration.jpg?ver=6' />
+      </div>
       </div>
     </DefaultLayout>
   );

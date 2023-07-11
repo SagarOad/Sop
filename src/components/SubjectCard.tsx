@@ -1,16 +1,18 @@
-import React from 'react';
-
 interface Props {
-    title: string;
-    subject: string;
+  title: string;
+  img: any;
 }
 
-const SubjectCard = ({ title, subject}: Props) => {
+const SubjectCard = ({ title, img }: Props) => {
   return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-3">
+    <div className="col-span-12 flex h-[250px] rounded-[16px] items-center justify-center border-6 border-white hover:bg-green group-hover:text-white bg-[#D9D9D9]  p-6 px-5 pt-7.5 pb-5 sm:px-7.5 xl:col-span-3">
       <div>
-        <h1 className='font-bold text-[32px] my-3'>{subject}</h1>
-        <h1 className='text-[18px]'>{title}</h1>
+        <div className="bg-white mx-auto w-[100px] h-[100px] rounded-full flex justify-center items-center">
+          <img src={img} alt="subject image" width={50} height={50} />
+        </div>
+        <h1 className="group text-center text-[20px] mt-2 font-medium text-black">
+          {title}
+        </h1>
       </div>
     </div>
   );

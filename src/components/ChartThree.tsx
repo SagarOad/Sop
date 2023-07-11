@@ -6,67 +6,23 @@ interface ChartThreeState {
   series: number[];
 }
 
-const options: ApexOptions = {
+const options = {
   chart: {
-    type: 'donut',
+    type: "bar"
   },
-  colors: [
-    '#264653',
-    '#2a9d8f',
-    '#577590',
-    '#f4a261',
-    '#e76f51',
-    '#606c38',
-    '#9EB077',
-    '#bc6c25',
-    '#fb8500',
-  ],
-  labels: [
-    'English',
-    'Pakistan Studies',
-    'Basic Math',
-    'General Knowledge',
-    'Creative Writing',
-    'Verbal Intelligence',
-    'Non-verbal Intelligence',
-    'Mechanical',
-    'Quick/Mental',
-  ],
-  legend: {
-    show: true,
-    position: 'bottom',
-  },
-
-  plotOptions: {
-    pie: {
-      donut: {
-        size: '65%',
-        background: 'transparent',
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  responsive: [
+  series: [
     {
-      breakpoint: 2600,
-      options: {
-        chart: {
-          width: 380,
-        },
-      },
-    },
-    {
-      breakpoint: 640,
-      options: {
-        chart: {
-          width: 200,
-        },
-      },
-    },
+      data: [10, 40, 20, 44, 22, 12]
+    }
   ],
+  xaxis: {
+    categories: [1, 2, 3, 4, 5, 6]
+  }
 };
+
+
+
+
 
 const ChartThree: React.FC = () => {
   const [state, setState] = useState<ChartThreeState>({
@@ -123,7 +79,7 @@ const ChartThree: React.FC = () => {
           <ReactApexChart
             options={options}
             series={state.series}
-            type="donut"
+            type="bar"
           />
         </div>
       </div>
