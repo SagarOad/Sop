@@ -1,4 +1,6 @@
-import { NavLink } from 'react-router-dom';
+// @ts-nocheck
+
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/Logo1.png';
 import authBanner from '../../assets/Group.png';
@@ -8,7 +10,6 @@ import { useState, useRef, useEffect, useContext } from 'react';
 import AuthContext from '../../context/AuthProvider';
 
 import axios from '../../api/axios';
-const LOGIN_URL = '/login';
 
 const SignIn = () => {
   const { setAuth } = useContext(AuthContext);
@@ -19,7 +20,7 @@ const SignIn = () => {
   const [password, setPassword] = useState();
   const [errMsg, setErrMsg] = useState();
   const [success, setSuccess] = useState();
-
+  const navigate = useNavigate();
   useEffect(() => {
     setErrMsg('');
   }, [email, password]);
@@ -29,19 +30,28 @@ const SignIn = () => {
 
     try {
       const response = await axios.post(
-        LOGIN_URL,
-        JSON.stringify({ email, password }),
+        '/login',
+        { email, password },
         {
-          headers: { 'Content-Type': 'application/json' },
-          withCredentials: true,
+          headers: { 
+            
+            'Content-Type': 'application/json' },
         }
       );
-      console.log(JSON.stringify(response?.data));
-      const accessToken = response?.data?.token;
-      setAuth({ email, password, accessToken });
+
+  
+    console.log(response.data);
+    const token = response.data.token;
+    console.log(token);
+
+    localStorage.setItem('token', token);
+
+      // Clear the form inputs and set success state
       setEmail('');
       setPassword('');
       setSuccess(true);
+      navigate('/mainpage');
+   
     } catch (err) {
       if (!err.response) {
         setErrMsg('No Server Response');
@@ -54,7 +64,6 @@ const SignIn = () => {
       } else {
         setErrMsg('Login failed');
       }
-      userRef.current.focus();
     }
   };
 
