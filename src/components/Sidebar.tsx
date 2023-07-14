@@ -185,7 +185,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 </NavLink>
               </li>
 
-
               <li>
                 <NavLink
                   to="/myeducation/myrecords"
@@ -234,13 +233,51 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Settings --> */}
               <li>
                 <NavLink
-                  to="/settings"
+                  to="/samplepaper"
                   className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white  ${
-                    pathname.includes('settings') && 'bg-[#4A4A4A] text-white'
+                    pathname.includes('/samplepaper') &&
+                    'bg-[#4A4A4A] text-white'
                   }`}
                 >
                   <img src={icon} alt="img" />
-                  Settings
+                  Sample paper
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/leaderboard"
+                  className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white  ${
+                    pathname.includes('/leaderboard') &&
+                    'bg-[#4A4A4A] text-white'
+                  }`}
+                >
+                  <img src={icon} alt="img" />
+                  Leaderboard
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/contact"
+                  className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white  ${
+                    pathname.includes('/contact') && 'bg-[#4A4A4A] text-white'
+                  }`}
+                >
+                  <img src={icon} alt="img" />
+                  Contact
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/faq"
+                  className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white  ${
+                    pathname.includes('/faq') && 'bg-[#4A4A4A] text-white'
+                  }`}
+                >
+                  <img src={icon} alt="img" />
+                  FAQs
                 </NavLink>
               </li>
               {/* <!-- Menu Item Settings --> */}

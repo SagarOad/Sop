@@ -33,6 +33,10 @@ import ChooseChapters from './components/ChooseChapters';
 import StartQuiz from './components/StartQuiz';
 import QuizPaper from './components/QuizPaper';
 import Guide from './components/Guide';
+import SamplePaper from './components/SamplePaper';
+import LeaderBoard from './LeaderBoard';
+import Contact from './components/Contact';
+import Faq from './components/Faq';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -70,7 +74,10 @@ function App() {
         <Route path="/forms/form-elements" element={<FormElements />} />
         <Route path="/forms/form-layout" element={<FormLayout />} />
         <Route path="/tables" element={<Tables />} />
-        <Route path="/settings" element={<Settings />} />
+        <Route path="/samplepaper" element={<SamplePaper />} />
+        <Route path="/leaderboard" element={<LeaderBoard />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/chart" element={<Chart />} />
         <Route path="/ui/alerts" element={<Alerts />} />
         <Route path="/ui/buttons" element={<Buttons />} />
@@ -86,8 +93,6 @@ function App() {
         <Route path="/startquiz" element={<StartQuiz />} />
         <Route path="/quizpaper" element={<QuizPaper />} />
         <Route path="/guide" element={<Guide />} />
-
-        
       </Routes>
     </>
   );

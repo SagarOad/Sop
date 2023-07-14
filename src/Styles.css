@@ -48,3 +48,57 @@ background: linear-gradient(180deg, rgba(123,203,254,1) 6%, rgba(62,179,255,1) 8
 .bg-\[\#E7E7E7\] {
     border: 1px solid #dbdbdb;
 }
+
+.tooltip .tooltiptext {
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    right: 100%;
+    width: 0px;
+    border: 0px solid #04BE5B;
+    transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+    width: 500px;
+    overflow-x:auto;
+    opacity: 1;
+    visibility: visible;
+    border: 2px solid #04BE5B;
+}
+
+
+.tooltip2 .tooltiptext2 {
+    opacity: 0;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    right: 90%;
+    width: 0px;
+    border: 0px solid #04BE5B;
+    transition: opacity 0.5s;
+}
+
+.tooltip2:hover .tooltiptext2 {
+    width: 500px;
+    overflow-x:auto;
+    opacity: 1;
+    visibility: visible;
+    border: 2px solid #04BE5B;
+}
+
+
+
+  .notifyPopupContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .flex.h-auto.py-16.px-6.md\:px-16.lg\:h-\[100vh\].lg\:py-0.lg\:px-36 {
+    background-color: white;
+}
+
+.flex.h-auto.py-16.px-6.md\:px-16.lg\:px-36.lg\:pr-0 {background: white;}

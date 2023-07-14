@@ -3,6 +3,7 @@ import Breadcrumb from './Breadcrumb';
 import QuizAccordion from './QuizAccordion';
 import ExamAccordion from './ExamAccordion';
 import { useState } from 'react';
+import SamplePaperList from './SamplePaperList';
 
 const MyRecords = () => {
   const initialTab = <QuizAccordion />;
@@ -40,6 +41,7 @@ const MyRecords = () => {
         </div>
         <div>{initialContent}</div>
       </div>
+
     </DefaultLayout>
   );
 };

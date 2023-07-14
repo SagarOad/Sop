@@ -118,7 +118,7 @@ const SignIn = () => {
 
               <NavLink to="/mainpage" className="mt-2 ">
                 <button
-                  onClick={handleSubmit}
+                  // onClick={handleSubmit}
                   className="mt-6 w-full cursor-pointer rounded-lg border bg-green  py-3 text-center text-[20px] text-white transition hover:bg-opacity-90 md:mt-3 md:py-4"
                 >
                   Log In
