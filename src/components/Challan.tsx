@@ -1,36 +1,94 @@
 import React from 'react';
-import DefaultLayout from '../layout/DefaultLayout';
-import Breadcrumb from './Breadcrumb';
-import RegistrationButtons from './RegistrationButtons';
+import meezan from "../assets/meezan.png";
+import easypaisa from "../assets/easypaisa.png";
+import jazzcash from "../assets/jazzcash.png";
 
 const Challan = () => {
   return (
-    <DefaultLayout>
-      <Breadcrumb pageName="Student Registraion For SOP Program" />
-      <div className='p-4 md:p-6 2xl:p-10'>
-      <RegistrationButtons />
-      <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-2">
-        <div className="col-span-12 flex justify-center rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
-          <img
-            className="h-[150px] w-[200px] object-top object-cover"
-            src="https://seeklogo.com/images/M/mcb-bank-logo-34F6A134AD-seeklogo.com.png"
-          />
-        </div>
-        <div className="col-span-12 flex justify-center rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
-          <img
-            className="h-[150px] object-top w-[200px] object-cover"
-            src="https://crushlogo.com/public/uploads/thumbnail/easypaisa-pay-logo-png-11664945262opncoxsn7c.png"
-          />
-        </div>
-        <div className="col-span-12 flex justify-center rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
-          <img
-            className="h-[150px] object-top w-[200px] object-cover"
-            src="https://play-lh.googleusercontent.com/9-0wlkGycWAJRsuQ-p_bMqDGE0liYgihxKka0PtRjxqEiRVkDKaROEyFxYg520lLbpk=w600-h300-pc0xffffff-pd"
-          />
+    <div>
+       <div className="px-6">
+      <h1 className="text-green my-8">you may submit challan physically at any nearest MCB branch, or pay online via ATM, jazzcash or easypaisa account. </h1>
+    
+    <div className=" flex flex-wrap">
+      <div className="w-[300px] rounded-b-xl mx-2 pb-6 drop-shadow-lg bg-[white]">
+        <div className="bg-green rounded-t-xl h-[100px]"></div>
+
+        <div className="px-4">
+          <div className="flex">
+            <div className="rounded-full border-2 border-[#04BE5B] w-[90px] h-[90px] flex justify-center items-center bg-white mt-[-45px]">
+              <img className="w-[65%]" src={meezan} alt="meezan-bank" />
+            </div>
+            <h1 className="px-2 font-medium">MCB BANK LIMITED</h1>
+          </div>
+
+          <div className="my-4">
+            <h1 className="text-[13px] text-[#848484]">ACCOUNT:</h1>
+            <p className="text-[13px] text-[#848484]">
+              IBAN# PK86MUCB0402217501008858
+            </p>
+          </div>
+
+          <div className="my-4">
+            <h1 className="text-[13px] text-[#848484]">ACCOUNT:</h1>
+            <p className="text-[13px] text-[#848484]">
+              IBAN# PK86MUCB0402217501008858
+            </p>
+          </div>
         </div>
       </div>
+
+      <div className="w-[300px] rounded-b-xl mx-2 pb-6 drop-shadow-lg bg-[white]">
+        <div className="bg-green rounded-t-xl h-[100px]"></div>
+
+        <div className="px-4">
+          <div className="flex">
+            <div className="rounded-full border-2 border-[#04BE5B] w-[90px] h-[90px] flex justify-center items-center bg-white mt-[-45px]">
+              <img className="w-[65%]" src={easypaisa} alt="meezan-bank" />
+            </div>
+            <div className="rounded-full mx-2 border-2 border-[#04BE5B] w-[90px] h-[90px] flex justify-center items-center bg-white mt-[-45px]">
+              <img className="w-[65%]" src={jazzcash} alt="meezan-bank" />
+            </div>
+          </div>
+
+          <div className="my-4">
+            <p className="text-[13px] text-[#04BE5B]">
+              You may submit challan physically at any nearest MCB branch, or
+              pay online via ATM, Jazzcash or easypaisa account.
+            </p>
+          </div>
+
+          <div className="my-4">
+            <p className="text-[13px] text-[#848484]">
+              <span className="text-[#FD0808] text-[14px]">Note:</span> Dear
+              student, when you pay your fee challan then confirm your
+              enrollment form.
+            </p>
+          </div>
+        </div>
       </div>
-    </DefaultLayout>
+
+      <div className="w-[300px] ">
+        <div className="h-[66%] rounded-xl mx-2 p-4 drop-shadow-lg bg-[white]">
+          <h1 className="text-[20px] text-black">Select Payment Method</h1>
+          <div className="flex flex-col my-4">
+            <button className="bg-green text-white rounded-lg py-3">
+              Bank Draft
+            </button>
+            <button className="border-4 border-green rounded-lg py-3 mt-2">
+              Online Payment
+            </button>
+          </div>
+        </div>
+
+        <div className="h-[30%] flex flex-col mt-3 rounded-xl mx-2 p-4 drop-shadow-lg bg-[white]">
+        <button className="bg-green mt-2 text-white rounded-lg py-3">
+              Download Challan
+            </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
   );
 };
 

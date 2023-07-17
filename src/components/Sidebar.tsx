@@ -136,6 +136,27 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
               <li>
                 <NavLink
+                  to="/registrationtabs"
+                  className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white  ${
+                    pathname.includes('registrationtabs') && 'bg-[#4A4A4A] text-white '
+                  }`}
+                >
+                  <img src={icon} alt="img" />
+                  Program Registration
+                </NavLink>
+                <NavLink
+                  to="/profile"
+                  className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white  ${
+                    pathname.includes('profile') && 'bg-[#4A4A4A] text-white '
+                  }`}
+                >
+                  <img src={icon} alt="img" />
+                  My Profile
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
                   to="/myeducation/educationhistory"
                   className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white  ${
                     pathname.includes('educationhistory') &&

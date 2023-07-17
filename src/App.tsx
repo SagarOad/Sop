@@ -37,6 +37,7 @@ import SamplePaper from './components/SamplePaper';
 import LeaderBoard from './LeaderBoard';
 import Contact from './components/Contact';
 import Faq from './components/Faq';
+import RegistrationTabs from './components/RegistrationTabs';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -77,7 +78,7 @@ function App() {
         <Route path="/samplepaper" element={<SamplePaper />} />
         <Route path="/leaderboard" element={<LeaderBoard />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/faq" element={<Faq />} />
+        <Route path="/registrationtabs" element={<RegistrationTabs />} />
         <Route path="/chart" element={<Chart />} />
         <Route path="/ui/alerts" element={<Alerts />} />
         <Route path="/ui/buttons" element={<Buttons />} />
