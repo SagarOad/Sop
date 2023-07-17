@@ -13,7 +13,7 @@ const ChallanVerify = () => {
         <form className="flex justify-center  flex-col">
           <input
             type="file"
-            className=" bg-white relative text-[#CCCCCC] rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]
+            className=" bg-white dark:bg-boxdark relative text-[#CCCCCC] rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]
              file:py-5 file:px-4
        file:border-0 file:rounded-none
       file:absolute file:right-0 file:top-0

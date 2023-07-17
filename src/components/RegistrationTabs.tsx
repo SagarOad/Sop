@@ -21,7 +21,7 @@ const RegistrationTabs = () => {
     <div className="flex justify-between px-8 py-6 w-[50%]">
           <button
             className={`${
-              initialContent == initialTab ? "bg-[#292A33]" : "bg-white"
+              initialContent == initialTab ? "bg-[#292A33]" : ""
             } 
                 text-[#838383] text-[18px] focus:bg-[#292A33] focus:text-white py-3 px-4 rounded-full`}
             type="button"

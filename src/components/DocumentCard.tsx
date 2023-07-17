@@ -1,4 +1,3 @@
-import React from 'react';
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { FiEdit } from "react-icons/fi"
 

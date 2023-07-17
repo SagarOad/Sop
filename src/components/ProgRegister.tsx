@@ -4,10 +4,10 @@ import banner from "../assets/GroupRegi.png";
 const ProgRegister = () => {
   return (
     <div className="flex p-6">
-      <div className="w-[50%] p-7 rounded-lg bg-[#F5F5F5]">
+      <div className="w-[50%] p-7 rounded-lg bg-[#0F5F5F5] dark:bg-boxdark">
         <form className="flex justify-center  flex-col">
           <select
-            className="bg-white text-[#CCCCCC] rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
+            className="bg-white text-[#CCCCCC] dark:bg-boxdark rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
             placeholder=""
           >
             <option value="volvo">Select Your Class</option>
@@ -16,7 +16,7 @@ const ProgRegister = () => {
             <option value="audi">Audi</option>
           </select>
           <select
-            className="bg-white text-[#CCCCCC] rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
+            className="bg-white text-[#CCCCCC] dark:bg-boxdark rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
             placeholder=""
           >
             <option value="volvo">Select Your Batch</option>
@@ -25,7 +25,7 @@ const ProgRegister = () => {
             <option value="audi">Audi</option>
           </select>
           <select
-            className="bg-white text-[#CCCCCC] rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
+            className="bg-white text-[#CCCCCC] dark:bg-boxdark rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
             placeholder=""
           >
             <option value="volvo">Select Your Province</option>
@@ -34,7 +34,7 @@ const ProgRegister = () => {
             <option value="audi">Audi</option>
           </select>
           <select
-            className="bg-white text-[#CCCCCC] rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
+            className="bg-white text-[#CCCCCC] dark:bg-boxdark rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
             placeholder=""
           >
             <option value="volvo">Select Your District</option>
@@ -43,7 +43,7 @@ const ProgRegister = () => {
             <option value="audi">Audi</option>
           </select>
           <select
-            className="bg-white text-[#CCCCCC] rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
+            className="bg-white text-[#CCCCCC] dark:bg-boxdark rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
             placeholder=""
           >
             <option value="volvo">Select Your Email</option>
