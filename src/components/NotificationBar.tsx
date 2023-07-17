@@ -2,7 +2,7 @@ import { MdNotifications } from 'react-icons/md';
 
 const NotificationBar = () => {
   return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-[#faebd7] p-2 shadow-default  xl:col-span-8">
+    <div className="col-span-12 rounded-sm border dark:border-strokedark dark:bg-boxdark bg-[#faebd7] p-2 shadow-default  xl:col-span-8">
       <div className="bg-green py-6">
         <h1 className="text-white text-[38px] text-center">MY NOTIFICATION</h1>
       </div>
@@ -15,7 +15,7 @@ const NotificationBar = () => {
           <h1 className="w-[165px] bg-meta-6 text-[16px] font-medium text-black">
             IMPORTANT NOTICE
           </h1>
-          <p className="mt-1 text-[16px] text-black">
+          <p className="mt-1 text-[16px] text-black dark:text-white">
             Dear Student, Learning material can be uploaded on Monday, Sorry for
             inconvenience
           </p>

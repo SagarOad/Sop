@@ -10,8 +10,8 @@ const MainPage = () => {
   return (
     <DefaultLayout>
       <Breadcrumb pageName='Dashboard' />
-      <div className="p-3">
-        <div className="dashboard-banner flex h-[250px] items-center rounded-sm border border-stroke bg-[#E9E9E9] p-7.5 shadow-default">
+      <div className="p-3 dark:bg-[#292A33]">
+        <div className="dashboard-banner flex h-[250px] items-center dark:border-strokedark rounded-sm border dark:bg-boxdark border-stroke bg-[#E9E9E9] p-7.5 shadow-default">
           <h1 className="text-[52px] font-medium text-[#04BE5B]">
             <span className="student-text font-bold text-[#057835]">
               STUDENT

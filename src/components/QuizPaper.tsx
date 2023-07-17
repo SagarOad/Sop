@@ -16,29 +16,29 @@ const QuizPaper = () => {
             </button>
           </div>
 
-          <h1 className="border-b-2 border-black py-5 text-[21px] font-bold text-[#00A651]">
+          <h1 className="border-b-2 border-black dark:border-white dark:text-white py-5 text-[21px] font-bold text-[#00A651]">
             Question No. 1 of 3
           </h1>
-          <h1 className="border-b-2 border-black py-5  text-[21px] font-bold text-black">
+          <h1 className="border-b-2 border-black dark:border-white py-5 dark:text-white text-[21px] font-bold text-black">
             How many legs are there in goat
           </h1>
 
           <div className="my-[45px] px-6 text-[21px]">
             <div className="my-4">
               <input type="radio" id="quiz-1" />
-              <label className="mx-2 font-medium text-black">Four</label>
+              <label className="mx-2 font-medium dark:text-white text-black">Four</label>
             </div>
             <div className="my-4">
               <input type="radio" id="quiz-1" />
-              <label className="mx-2 font-medium text-black">Four</label>
+              <label className="mx-2 font-medium dark:text-white text-black">Four</label>
             </div>
             <div className="my-4">
               <input type="radio" id="quiz-1" />
-              <label className="mx-2 font-medium text-black">Four</label>
+              <label className="mx-2 font-medium dark:text-white text-black">Four</label>
             </div>
             <div className="my-4">
               <input type="radio" id="quiz-1" />
-              <label className="mx-2 font-medium text-black">Four</label>
+              <label className="mx-2 font-medium dark:text-white text-black">Four</label>
             </div>
 
             <div>

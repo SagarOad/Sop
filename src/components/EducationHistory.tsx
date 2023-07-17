@@ -11,7 +11,7 @@ const EducationHistory = () => {
   return (
     <DefaultLayout>
       <Breadcrumb pageName="My Education" />
-      <div className="bg-[#F4F4F4] p-4 md:p-6 2xl:p-10">
+      <div className="bg-[#F4F4F4] dark:bg-[#292A33] border dark:border-strokedark p-4 md:p-6 2xl:p-10">
         <div className="flex justify-end">
           <button
           onClick={() => setShowModal(true)}

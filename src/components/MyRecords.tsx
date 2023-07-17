@@ -14,7 +14,7 @@ const MyRecords = () => {
     <DefaultLayout>
       <Breadcrumb pageName="My Records" />
 
-      <div className="mx-3 bg-[#F4F4F4]">
+      <div className="mx-3 bg-[#F4F4F4] dark:bg-[#292A33]">
         <div className="flex w-[50%] justify-between px-8 py-6">
           <button
             className={`${
@@ -26,7 +26,7 @@ const MyRecords = () => {
               setInitialContent(initialTab);
             }}
           >
-            Program Registration
+            Quiz
           </button>
           <button
             className={`${initialContent == secondTab ? 'bg-[#292A33]' : 'bg-white'} 
@@ -36,7 +36,7 @@ const MyRecords = () => {
               setInitialContent(secondTab);
             }}
           >
-            Challan
+            Exam
           </button>
         </div>
         <div>{initialContent}</div>

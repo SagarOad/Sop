@@ -1,10 +1,9 @@
-import React from 'react';
 import Data from '../NotificationData';
 import {MdNotificationsActive} from 'react-icons/md'
 
 const notificationPopup = () => {
   return (
-    <div>
+    <div className='z-10'>
       <div className="notifyPopupContainer w-[500px] border-4 rounded-sm  bg-white h-[250px] overflow-scroll max-w-full p-2 shadow-default">
         {Data.map((data) => (
           <div

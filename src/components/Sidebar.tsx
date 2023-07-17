@@ -196,7 +196,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   My Records
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to="/myeducation/myexams"
                   className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white  ${
@@ -206,7 +206,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   <img src={icon} alt="img" />
                   My Exams
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   to="/myeducation/myquizes"

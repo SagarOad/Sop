@@ -2,7 +2,7 @@ import React from 'react';
 
 const Timer = () => {
   return (
-    <div className='bg-[#E6E6E6] my-6'>
+    <div className='bg-[#E6E6E6] dark:bg-boxdark border dark:border-strokedark my-6'>
       <div className="bg-green py-10">
         <h1 className="text-center text-[32px] font-medium text-white">
         LAST DATE OF STUDENT REGISTRATION

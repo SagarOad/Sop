@@ -9,7 +9,7 @@ const Breadcrumb = ({ pageName }: BreadcrumbProps) => {
   const { pathname } = location;
 
   return (
-    <div className="mx-3 bg-[#292A33] p-4 md:p-6 2xl:p-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <div className="sticky top-0 w-full drop-shadow-1 dark:drop-shadow-none px-3  border dark:border-strokedark bg-[#292A33] p-4 md:p-6 2xl:p-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <h2 className="text-title-md2 font-semibold text-white">
         {pageName}
       </h2>

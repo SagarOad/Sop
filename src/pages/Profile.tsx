@@ -8,8 +8,8 @@ const Profile = () => {
     <DefaultLayout>
       <Breadcrumb pageName="Profile" />
       <div>
-      <div className="p-4 md:p-6  grid grid-cols-12 gap-4 md:gap-6 2xl:gap-2">
-        <div className="col-span-12 bg-white p-7.5 xl:col-span-4">
+      <div className="p-4 md:p-6 dark:border-strokedark dark:bg-boxdark grid grid-cols-12 gap-4 md:gap-6 2xl:gap-2">
+        <div className="col-span-12 bg-white dark:border-strokedark dark:bg-boxdark  p-7.5 xl:col-span-4">
           {/* Student Card Starts Here */}
           <div className="mx-auto items-center justify-center">
             <div className="relative z-30 mx-auto h-30 w-full max-w-30 flex justify-center items-center rounded-full bg-white/20 p-1 backdrop-blur sm:h-44 sm:max-w-44 sm:p-3">
@@ -22,20 +22,20 @@ const Profile = () => {
               </div>
             </div>
 
-            <h3 className="font-medium mt-6 text-black text-[22px]">PERSONAL INFO</h3>
+            <h3 className="font-medium mt-6 dark:text-white text-[22px]">PERSONAL INFO</h3>
             <div className="mt-2">
               <div className="mb-4.5">
-                <label className=" block text-black">Date of Birth</label>
+                <label className=" block dark:text-white">Date of Birth</label>
                 <input
                   type="date"
                   placeholder="Date of Birth"
-                  className="w-full py-3 px-6 bg-[#EEEEEE] border-2 border-[#CCCCCC] outline-none border-l-8 border-l-red rounded-md text-[#848484]"
+                  className="w-full py-3 px-6 bg-[#EEEEEE] dark:border-white dark:bg-boxdark border-2 border-[#CCCCCC] outline-none border-l-8 border-l-red rounded-md text-[#848484]"
                 />
               </div>
 
               <div className="mt-5">
-                <label className=" block text-black">Gender</label>
-                <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <label className=" block dark:text-white">Gender</label>
+                <div className="mt-1 flex justify-between items-center border-2 dark:border-white dark:bg-boxdark border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <select className="w-full bg-transparent py-3 px-5 outline-none transition">
                     <option value="">Male</option>
                     <option value="">Female</option>
@@ -63,10 +63,10 @@ const Profile = () => {
               </div>
 
               <div className="mt-5">
-                <label className=" block text-black dark:text-white">
+                <label className=" block  dark:text-white">
                   Religion
                 </label>
-                <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white dark:border-white dark:bg-boxdark outline-none">
                   <select className="w-full bg-transparent py-3 px-5 outline-none transition">
                     <option value="">Islam</option>
                     <option value="">Hinduism</option>
@@ -98,9 +98,9 @@ const Profile = () => {
           </div>
           {/* Student Card ends here */}
         </div>
-        <div className="col-span-12 bg-white p-2  xl:col-span-4">
+        <div className="col-span-12 bg-white dark:border-strokedark dark:bg-boxdark p-2  xl:col-span-4">
           <div className="pb-2 px-6.5">
-            <h3 className="font-medium text-black dark:text-white text-[22px]">
+            <h3 className="font-medium dark:text-white text-[22px]">
               GENERAL INFO
             </h3>
           </div>
@@ -108,10 +108,10 @@ const Profile = () => {
             <div className="">
               <div className="mb-4.5 flex flex-col gap-6 xl:flex-row">
                 <div className="w-full xl:w-full mb-2">
-                  <label className="block text-black dark:text-white">
+                  <label className="block  dark:text-white">
                     Father Name
                   </label>
-                  <div className="mt-1 border-l-8 flex justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                  <div className="mt-1 border-l-8 flex justify-between dark:border-white dark:bg-boxdark items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                     <input
                       type="text"
                       placeholder="Enter your first name"
@@ -121,25 +121,25 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className="block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className="block  dark:text-white">
                   Father Nic
                 </label>
-                <div className="mt-1 border-l-8 flex justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 border-l-8 flex dark:border-white dark:bg-boxdark justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <input
                     type="text"
                     placeholder="Father Nic"
-                    className="w-full bg-transparent py-3 px-5 font-medium outline-none transition"
+                    className="w-full  bg-transparent py-3 px-5 font-medium outline-none transition"
                   />
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2 flex flex-col gap-6 xl:flex-row">
+              <div className=" mb-2 flex flex-col gap-6 xl:flex-row">
                 <div className="w-full xl:w-1/2">
-                  <label className="block text-black dark:text-white">
+                  <label className="block dark:text-white">
                     Father Occupation
                   </label>
-                  <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                  <div className="mt-1 flex justify-between dark:border-white dark:bg-boxdark items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                     <input
                       type="text"
                       placeholder="Father Ocupation"
@@ -149,10 +149,10 @@ const Profile = () => {
                 </div>
 
                 <div className="w-full xl:w-1/2">
-                  <label className="block text-black dark:text-white">
+                  <label className="block  dark:text-white">
                     Father Designation
                   </label>
-                  <div className="mt-1  flex justify-between items-center  border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                  <div className="mt-1 flex justify-between dark:border-white dark:bg-boxdark items-center  border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                     <input
                       type="text"
                       placeholder="Father Designation"
@@ -162,11 +162,11 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className="block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className="block dark:text-white">
                   Father's Mobile Number
                 </label>
-                <div className="mt-1 border-l-8 flex justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 border-l-8 flex dark:border-white dark:bg-boxdark justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <input
                     type="text"
                     placeholder="Father's Mobile Number"
@@ -175,11 +175,11 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className=" block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className=" block  dark:text-white">
                   Father's Department
                 </label>
-                <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 flex justify-between dark:border-white dark:bg-boxdark items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <input
                     type="text"
                     placeholder="Father's Department"
@@ -188,11 +188,11 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className="block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className="block dark:text-white">
                   Mother Name
                 </label>
-                <div className="mt-1 border-l-8 flex justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 border-l-8 flex justify-between dark:border-white dark:bg-boxdark items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <input
                     type="text"
                     placeholder="Mother Name"
@@ -201,11 +201,11 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className="block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className="block dark:text-white">
                   Mother CNIC
                 </label>
-                <div className="mt-1 border-l-8 flex justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 border-l-8 flex justify-between dark:border-white dark:bg-boxdark items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <input
                     type="text"
                     placeholder="Mother Name"
@@ -216,10 +216,10 @@ const Profile = () => {
 
               <div className="mb-4.5 flex flex-col gap-6 xl:flex-row">
                 <div className="w-full xl:w-1/2 mb-2">
-                  <label className="block text-black dark:text-white">
+                  <label className="block dark:text-white">
                     Mother's Occupation
                   </label>
-                  <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                  <div className="mt-1 flex justify-between dark:border-white dark:bg-boxdark items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                     <input
                       type="text"
                       placeholder="Mother's Ocupation"
@@ -229,10 +229,10 @@ const Profile = () => {
                 </div>
 
                 <div className="w-full xl:w-1/2 mb-2">
-                  <label className="block text-black dark:text-white">
+                  <label className="block dark:text-white">
                     Mother's Designation
                   </label>
-                  <div className="mt-1  flex justify-between items-center  border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                  <div className="mt-1  flex justify-between dark:border-white dark:bg-boxdark items-center  border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                     <input
                       type="text"
                       placeholder="Mother's Designation"
@@ -245,20 +245,20 @@ const Profile = () => {
           </form>
         </div>
         {/* form 2 starts here */}
-        <div className="col-span-12 bg-white p-2  xl:col-span-4">
+        <div className="col-span-12 bg-white dark:border-strokedark dark:bg-boxdark p-2  xl:col-span-4">
           <div className="pb-2 px-6.5">
-            <h3 className="font-medium text-black dark:text-white text-[22px]">
+            <h3 className="font-medium dark:text-white text-[22px]">
               ADDRESS INFO
             </h3>
           </div>
           <form action="#">
             <div className="">
               <div className="mb-4.5 flex flex-col gap-6 xl:flex-row">
-                <div className="mb-4.5 mb-2">
-                  <label className="block text-black dark:text-white">
+                <div className="mb-4.5">
+                  <label className="block dark:text-white">
                     Village
                   </label>
-                  <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                  <div className="mt-1 flex justify-between dark:border-white dark:bg-boxdark items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                     <input
                       type="text"
                       placeholder="Village"
@@ -267,11 +267,11 @@ const Profile = () => {
                   </div>
                 </div>
 
-                <div className="mb-4.5 mb-2">
-                  <label className="block text-black dark:text-white">
+                <div className="mb-4.5">
+                  <label className="block dark:text-white">
                     Town
                   </label>
-                  <div className="mt-1  flex justify-between items-center  border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                  <div className="mt-1  flex justify-between dark:border-white dark:bg-boxdark items-center  border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                     <input
                       type="text"
                       placeholder="Town"
@@ -281,11 +281,11 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className=" block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className=" block dark:text-white">
                   Province
                 </label>
-                <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 flex justify-between dark:border-white dark:bg-boxdark items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <select className="w-full bg-transparent py-3 px-5 outline-none transition">
                     <option value="">Select Your Province</option>
                     <option value="">Sindh</option>
@@ -315,11 +315,11 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className=" block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className=" block dark:text-white">
                   District
                 </label>
-                <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 flex justify-between dark:border-white dark:bg-boxdark items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <select className="w-full bg-transparent py-3 px-5 outline-none transition">
                     <option value="">Select Your District</option>
                     <option value="">Sindh</option>
@@ -349,11 +349,11 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className="block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className="block dark:text-white">
                   Postal Code
                 </label>
-                <div className="mt-1 flex justify-between items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 flex justify-between dark:border-white dark:bg-boxdark items-center border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <input
                     type="text"
                     placeholder="Postal Code"
@@ -362,11 +362,11 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className="block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className="block dark:text-white">
                   Street
                 </label>
-                <div className="mt-1 border-l-8 flex justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 border-l-8 flex dark:border-white dark:bg-boxdark justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <textarea
                     rows={3}
                     placeholder="Street"
@@ -375,11 +375,11 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className="mb-4.5 mb-2">
-                <label className="block text-black dark:text-white">
+              <div className="mb-4.5">
+                <label className="block dark:text-white">
                   House No
                 </label>
-                <div className="mt-1 border-l-8 flex justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
+                <div className="mt-1 border-l-8 flex dark:border-white dark:bg-boxdark justify-between items-center border-l-red border-2 border-[#CCCCCC] rounded-lg bg-white outline-none">
                   <textarea
                     rows={3}
                     placeholder="House"
@@ -392,7 +392,7 @@ const Profile = () => {
         </div>
         {/* form 2 ends here */}
       </div>
-      <div className="flex justify-center items-center mb-6">
+      <div className="flex dark:bg-boxdark justify-center items-center pb-6">
         <button className="bg-green text-white text-[18px] py-4 px-12 rounded-xl">
           Submit
         </button>
