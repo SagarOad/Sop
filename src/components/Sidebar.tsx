@@ -113,7 +113,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             </div>
 
             <ul className="space-y-2 bg-white font-medium">
-              <li>
+              {/* <li>
                 <NavLink
                   to="/mainpage"
                   className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white  ${
@@ -132,7 +132,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   <img src={icon} alt="img" />
                   My Profile
                 </NavLink>
-              </li>
+              </li> */}
 
               <li>
                 <NavLink
