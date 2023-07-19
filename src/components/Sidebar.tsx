@@ -138,6 +138,21 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 </NavLink>
               </li> */}
 
+
+
+<li>
+                <NavLink
+                  to="/mainpage"
+                  className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black dark:text-white duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white dark:border-b  ${
+                    pathname.includes('mainpage') && 'bg-[#4A4A4A] text-white '
+                  }`}
+                >
+                  <img src={icon} alt="img" />
+                  Dashboard
+                </NavLink>
+
+                </li>
+
               <li>
                 <NavLink
                   to="/registrationtabs"
@@ -148,6 +163,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   <img src={icon} alt="img" />
                   Program Registration
                 </NavLink>
+
+                </li>
+                <li>
                 <NavLink
                   to="/profile"
                   className={`group relative flex items-center gap-2.5  py-6 px-6 font-medium text-black dark:text-white duration-300 ease-in-out hover:bg-[#4A4A4A] hover:text-white dark:border-b  ${
