@@ -65,11 +65,13 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       }`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
-      <div className="flex h-[83px] items-center pl-2 pr-6 justify-between bg-white">
+      <div className="flex h-[83px] items-center pl-2 pr-6 justify-between bg-white dark:bg-boxdark">
     
       <a href="#" className="ml-2 flex md:mr-24">
-          <img src={Logo} className="mr-3 h-8" alt="Logo" />
-          <span className="self-center whitespace-nowrap text-xl font-semibold text-black sm:text-2xl">
+         <div className='bg-white p-1 mr-3'>
+           <img src={Logo} className=" h-8" alt="Logo" />
+          </div>
+          <span className="self-center whitespace-nowrap text-xl font-semibold text-black dark:text-white sm:text-2xl">
             SOP
           </span>
         </a>
