@@ -15,12 +15,12 @@ const MyRecords = () => {
       <Breadcrumb pageName="My Records" />
 
       <div className="mx-3 bg-[#F4F4F4] dark:bg-[#292A33]">
-        <div className="flex w-[50%] justify-between px-8 py-6">
+        <div className="flex w-[100%] md:w-[50%] justify-between px-8 py-6">
           <button
             className={`${
               initialContent == initialTab ? 'bg-[#292A33]' : 'bg-white'
             } 
-                rounded-full py-3 px-4 text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
+                rounded-full py-3 px-4 mr-4 text-[18px] text-[#838383] focus:bg-[#292A33] focus:text-white`}
             type="button"
             onClick={() => {
               setInitialContent(initialTab);

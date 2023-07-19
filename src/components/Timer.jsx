@@ -2,44 +2,63 @@ import React from 'react';
 
 const Timer = () => {
   return (
-    <div className='bg-[#E6E6E6] dark:bg-boxdark border dark:border-strokedark my-6'>
+    <div className="my-6 border bg-[#E6E6E6] dark:border-strokedark dark:bg-boxdark">
       <div className="bg-green py-10">
-        <h1 className="text-center text-[32px] font-medium text-white">
-        LAST DATE OF STUDENT REGISTRATION
+        <h1 className="text-center text-[26px] font-medium leading-[32px] text-white md:text-[32px]">
+          LAST DATE OF STUDENT REGISTRATION
         </h1>
       </div>
-      <div className="grid auto-cols-max grid-flow-col py-8 justify-center gap-5 text-center">
-        <div className="bg-[#7D7D7D] rounded-box flex flex-col px-12 pt-10 py-6">
-          <h1 className="countdown font-mono text-white text-[60px]">
+      <div className="hidden md:grid auto-cols-max grid-flow-col justify-center gap-5 py-8 text-center">
+        <div className="rounded-box flex flex-col bg-[#7D7D7D] px-12 py-6 pt-10">
+          <h1 className="countdown font-mono text-[28px] text-white md:text-[60px]">
             15
           </h1>
-          <p className='text-white text-[26px] pt-8'>
-          days
-          </p>
+          <p className="pt-8 text-[18px] text-white md:text-[26px]">days</p>
         </div>
-        <div className="bg-[#7D7D7D] rounded-box text-neutral-content flex flex-col px-12 pt-10 py-6">
-          <h1 className="countdown font-mono text-white text-[60px]">
+        <div className="rounded-box text-neutral-content flex flex-col bg-[#7D7D7D] px-12 py-6 pt-10">
+          <h1 className="countdown font-mono text-[28px] text-white md:text-[60px]">
             10
           </h1>
-          <p className='text-white text-[26px] pt-8'>
-          hours
-          </p>
+          <p className="pt-8 text-[18px] text-white md:text-[26px]">hours</p>
         </div>
-        <div className="bg-[#7D7D7D] rounded-box text-neutral-content flex flex-col px-12 pt-10 py-6">
-          <h1 className="countdown font-mono text-white text-[60px]">
+        <div className="rounded-box text-neutral-content flex flex-col bg-[#7D7D7D] px-12 py-6 pt-10">
+          <h1 className="countdown font-mono text-[28px] text-white md:text-[60px]">
             24
           </h1>
-          <p className='text-white text-[26px] pt-8'>
-          min
-          </p>
+          <p className="pt-8 text-[18px] text-white md:text-[26px]">min</p>
         </div>
-        <div className="bg-[#7D7D7D] rounded-box text-neutral-content flex flex-col px-12 pt-10 py-6">
-          <h1 className="countdown font-mono text-white text-[60px]">
+        <div className="rounded-box text-neutral-content flex flex-col bg-[#7D7D7D] px-12 py-6 pt-10">
+          <h1 className="countdown font-mono text-[28px] text-white md:text-[60px]">
             34
           </h1>
-          <p className='text-white text-[26px] pt-8'>
-          sec
-          </p>
+          <p className="pt-8 text-[18px] text-white md:text-[26px]">sec</p>
+        </div>
+      </div>
+
+      <div className='flex md:hidden my-4 justify-center'>
+        <div className="mx-2 p-3 flex w-auto items-center justify-center bg-[#7D7D7D]">
+          <div>
+            <p className="text-center text-[20px] text-white">15</p>
+            <p className="text-center text-[18px]">days</p>
+          </div>
+        </div>
+        <div className="mx-2 p-3 flex w-auto items-center justify-center bg-[#7D7D7D]">
+          <div>
+            <p className="text-center text-[20px] text-white">10</p>
+            <p className="text-center text-[18px]">hours</p>
+          </div>
+        </div>
+        <div className="mx-2 p-3 flex w-auto items-center justify-center bg-[#7D7D7D]">
+          <div>
+            <p className="text-center text-[20px] text-white">24</p>
+            <p className="text-center text-[18px]">min</p>
+          </div>
+        </div>
+        <div className="mx-2 p-3 flex w-auto items-center justify-center bg-[#7D7D7D]">
+          <div>
+            <p className="text-center text-[20px] text-white">34</p>
+            <p className="text-center text-[18px]">sec</p>
+          </div>
         </div>
       </div>
     </div>

@@ -18,12 +18,12 @@ const RegistrationTabs = () => {
     <DefaultLayout>
       <Breadcrumb pageName="Program Registration" />
     <div>
-    <div className="flex justify-between px-8 py-6 w-[50%]">
+    <div className="flex justify-between md:px-8 px-0 py-6 w-[100%] md:w-[50%]">
           <button
             className={`${
               initialContent == initialTab ? "bg-[#292A33]" : ""
             } 
-                text-[#838383] text-[18px] focus:bg-[#292A33] focus:text-white py-3 px-4 rounded-full`}
+                text-[#838383] text-[14px] md:text-[18px] focus:bg-[#292A33] focus:text-white py-3 px-4 rounded-full`}
             type="button"
             onClick={() => {
               setInitialContent(initialTab);
@@ -33,7 +33,7 @@ const RegistrationTabs = () => {
           </button>
           <button
             className={`${initialContent == secondTab ? "bg-[#292A33]" : ""} 
-                text-[#838383] text-[18px] focus:bg-[#292A33] focus:text-white py-3 px-4 rounded-full`}
+                text-[#838383] text-[14px] md:text-[18px] focus:bg-[#292A33] focus:text-white py-3 px-4 rounded-full`}
             type="button"
             onClick={() => {
               setInitialContent(secondTab);
@@ -44,7 +44,7 @@ const RegistrationTabs = () => {
 
           <button
             className={`${initialContent == thirdTab ? "bg-[#292A33]" : ""} 
-                text-[#838383] text-[18px] focus:bg-[#292A33] focus:text-white py-3 px-4 rounded-full`}
+                text-[#838383] text-[14px] md:text-[18px] focus:bg-[#292A33] focus:text-white py-3 px-4 rounded-full`}
             type="button"
             onClick={() => {
               setInitialContent(thirdTab);

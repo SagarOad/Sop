@@ -3,8 +3,8 @@ import banner from "../assets/GroupRegi.png";
 
 const ProgRegister = () => {
   return (
-    <div className="flex p-6">
-      <div className="w-[50%] p-7 rounded-lg bg-[#0F5F5F5] dark:bg-boxdark">
+    <div className="block lg:flex p-6">
+      <div className="w-[100%] md:mb-6 p-0 md:p-7 rounded-lg bg-[#0F5F5F5] dark:bg-boxdark">
         <form className="flex justify-center  flex-col">
           <select
             className="bg-white text-[#CCCCCC] dark:bg-boxdark rounded-lg border-2 px-4 py-4 my-1 border-[#cfcfcf]"
@@ -56,7 +56,7 @@ const ProgRegister = () => {
           <button className="bg-[#04BE5B] py-4 px-12  rounded-lg mt-3 mx-auto text-white">Submit</button>
         </div>
       </div>
-      <div className="w-[50%]">
+      <div className="w-[100%]">
         <img className="mx-auto" src={banner} alt="Banner" />
       </div>
     </div>

@@ -1,15 +1,14 @@
 import { ReactNode, useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import { IoMdNotifications } from 'react-icons/io';
-import { HiFlag } from 'react-icons/hi';
+import Header from '../components/Header';
+
 import { SlCalender } from 'react-icons/sl';
 import { MdSettings } from 'react-icons/md';
 import { AiOutlinePoweroff } from 'react-icons/ai';
 import { NavLink, useLocation } from 'react-router-dom';
-import NotificationBar from '../components/NotificationBar';
 import NotificationPopup from '../components/NotificationPopup';
 
-import NotificationPage from '../pages/NotificationPage';
 import Calender from '../components/Calender';
 import useColorMode from '../hooks/useColorMode';
 
@@ -19,7 +18,6 @@ interface DefaultLayoutProps {
 
 const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [notificationCard, setNotificationCard] = useState();
   const [colorMode, setColorMode] = useColorMode();
   return (
     <>
@@ -37,6 +35,8 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
           {/* <!-- ===== Content Area Start ===== --> */}
           <div className="relative dark:bg-[#292A33] flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
             {/* <!-- ===== Header Start ===== --> */}
+            <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+
             {/* <!-- ===== Header End ===== --> */}
 
             {/* <!-- ===== Main Content Start ===== --> */}
@@ -50,7 +50,7 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
           </div>
           {/* <!-- ===== Content Area End ===== --> */}
 
-          <div className="border-l-4 border-[#292A33] sm:w-[6%]">
+          <div className="border-l-4 border-[#292A33] invisible lg:visible w-[0] lg:w-[6%]">
             <div className="flex flex-col items-center justify-center">
              
               <div className="tooltip relative p-5">

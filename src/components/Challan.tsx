@@ -1,4 +1,3 @@
-import React from 'react';
 import meezan from "../assets/meezan.png";
 import easypaisa from "../assets/easypaisa.png";
 import jazzcash from "../assets/jazzcash.png";
@@ -9,8 +8,8 @@ const Challan = () => {
        <div className="px-6">
       <h1 className="text-green my-8">you may submit challan physically at any nearest MCB branch, or pay online via ATM, jazzcash or easypaisa account. </h1>
     
-    <div className=" flex flex-wrap">
-      <div className="w-[300px] rounded-b-xl mx-2 pb-6 drop-shadow-lg bg-[white] dark:bg-boxdark">
+    <div className="flex flex-wrap">
+      <div className="w-[100%] lg:w-[300px] my-2 rounded-b-xl mx-2 pb-6 drop-shadow-lg bg-[white] dark:bg-boxdark">
         <div className="bg-green rounded-t-xl h-[100px]"></div>
 
         <div className="px-4">
@@ -37,7 +36,7 @@ const Challan = () => {
         </div>
       </div>
 
-      <div className="w-[300px] rounded-b-xl mx-2 pb-6 drop-shadow-lg bg-[white] dark:bg-boxdark">
+      <div className="w-[100%] lg:w-[300px] my-2 rounded-b-xl mx-2 pb-6 drop-shadow-lg bg-[white] dark:bg-boxdark">
         <div className="bg-green rounded-t-xl h-[100px]"></div>
 
         <div className="px-4">
@@ -67,7 +66,7 @@ const Challan = () => {
         </div>
       </div>
 
-      <div className="w-[300px] ">
+      <div className="w-[100%] lg:w-[300px] my-2">
         <div className="h-[66%] rounded-xl mx-2 p-4 drop-shadow-lg bg-[white] dark:bg-boxdark">
           <h1 className="text-[20px] text-black dark:text-white">Select Payment Method</h1>
           <div className="flex flex-col my-4">

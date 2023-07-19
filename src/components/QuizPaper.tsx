@@ -5,13 +5,13 @@ const QuizPaper = () => {
   return (
     <DefaultLayout>
       <Breadcrumb pageName="My Quizes" />
-      <div className="mx-3 flex">
-        <div className="mr-2 mt-2 w-[70%] border-[3px] border-[#000000] p-4 md:p-6 2xl:p-10">
+      <div className="mx-3 block md:flex">
+        <div className="mr-2 mt-2 w-[100%] md:w-[70%] border-[3px] border-[#000000] p-4 md:p-6 2xl:p-10">
           <div className="flex items-center justify-between border-b-2 border-black py-2">
-            <button className="rounded-lg bg-green p-3 px-12 font-bold text-white">
+            <button className="rounded-lg bg-green p-3 px-4 md:px-12 font-bold text-white">
               English
             </button>
-            <button className="rounded-lg bg-[#5BC8F9] p-3 px-12 font-bold text-white">
+            <button className="rounded-lg bg-[#5BC8F9] p-3 px-4 md:px-12 font-bold text-white">
               Instruction
             </button>
           </div>
@@ -44,12 +44,12 @@ const QuizPaper = () => {
             <div>
               <div className="my-6 flex items-center mt-14 justify-between">
                 <button
-                  className="mr-3 w-full rounded-lg bg-green py-4 px-12 text-[18px] text-white"
+                  className="mr-3 w-full rounded-lg bg-green py-4 px-4 md:px-12 text-[14px] md:text-[18px] text-white"
                 >
                   Submit
                 </button>
                 <button
-                  className="rounded-lg w-full bg-[#E72E2E] py-4 px-12 text-[18px] text-white"
+                  className="rounded-lg w-full bg-[#E72E2E] py-4 px-4 md:px-12 text-[14px] md:text-[18px] text-white"
                 >
                   Close
                 </button>
@@ -61,7 +61,7 @@ const QuizPaper = () => {
             </div>
           </div>
         </div>
-        <div className="w-[30%]">
+        <div className="w-[100%] md:w-[30%]">
           <div className="flex items-center justify-between bg-[#D2EBFF] py-9 px-4">
             <h1 className="font-medium text-[#000000]">
               <span className="#04BE5B text-[32px] font-medium text-green">

@@ -121,3 +121,38 @@ background: linear-gradient(180deg, rgba(123,203,254,1) 6%, rgba(62,179,255,1) 8
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+ #main-header {
+    display: hidden;
+}
+
+  @media screen and (max-width: 1024px) {
+    #main-header {
+        display: block;
+    }
+
+    .tooltip2 .tooltiptext2 {
+        opacity: 0;
+        text-align: center;
+        border-radius: 6px;
+        width: 258px !important;
+        position: absolute;
+        top: 57px !important;
+        right: -63px !important;
+        z-index: 1;
+        width: 0px;
+        border: 0px solid #04BE5B;
+        transition: opacity 0.5s;
+    }
+  }
+
+  /* button.z-99999.block.rounded-sm.border.p-1\.5.shadow-sm.border-strokedark.bg-boxdark.lg\:hidden {
+    position: relative;
+    top: 110px;
+    
+}
+
+header.sticky.top-0.z-999.flex.w-full.bg-boxdark.drop-shadow-1.dark\:drop-shadow-none {
+    position: absolute;
+    top: -115px;
+} */

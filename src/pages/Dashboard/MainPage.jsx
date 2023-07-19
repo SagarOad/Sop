@@ -11,8 +11,8 @@ const MainPage = () => {
     <DefaultLayout>
       <Breadcrumb pageName='Dashboard' />
       <div className="p-3 dark:bg-[#292A33]">
-        <div className="dashboard-banner flex h-[250px] items-center dark:border-strokedark rounded-sm border dark:bg-boxdark border-stroke bg-[#E9E9E9] p-7.5 shadow-default">
-          <h1 className="text-[52px] font-medium text-[#04BE5B]">
+        <div className="dashboard-banner flex h-[250px] items-center dark:border-strokedark rounded-sm border dark:bg-boxdark border-stroke bg-[#E9E9E9] p-4 md:p-7.5 shadow-default">
+          <h1 className="md:text-[52px] text-[36px] leading-[50px]	 font-medium text-[#04BE5B]">
             <span className="student-text font-bold text-[#057835]">
               STUDENT
             </span>{' '}

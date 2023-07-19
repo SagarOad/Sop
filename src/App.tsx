@@ -78,6 +78,7 @@ function App() {
         <Route path="/samplepaper" element={<SamplePaper />} />
         <Route path="/leaderboard" element={<LeaderBoard />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/registrationtabs" element={<RegistrationTabs />} />
         <Route path="/chart" element={<Chart />} />
         <Route path="/ui/alerts" element={<Alerts />} />
