@@ -104,7 +104,7 @@ background: linear-gradient(180deg, rgba(123,203,254,1) 6%, rgba(62,179,255,1) 8
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
   /* Track */
@@ -143,6 +143,10 @@ background: linear-gradient(180deg, rgba(123,203,254,1) 6%, rgba(62,179,255,1) 8
         width: 0px;
         border: 0px solid #04BE5B;
         transition: opacity 0.5s;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
   }
 
