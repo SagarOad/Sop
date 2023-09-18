@@ -30,13 +30,9 @@ const ChartThree: React.FC = () => {
   });
 
   return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-5">
+    <div className="col-span-12 rounded-sm  px-5 pt-7.5 pb-5 shadow-defaul sm:px-7.5 xl:col-span-5">
       <div className="mb-3 justify-between gap-4 sm:flex">
-        <div>
-          <h5 className="text-xl text-[32px] font-semibold text-black dark:text-white">
-            Student Record Graph
-          </h5>
-        </div>
+
         <div>
           <div className="relative z-20 inline-block">
             <select

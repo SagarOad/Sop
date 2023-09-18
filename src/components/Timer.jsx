@@ -2,36 +2,31 @@ import React from 'react';
 
 const Timer = () => {
   return (
-    <div className="my-6 border bg-[#E6E6E6] dark:border-strokedark dark:bg-boxdark">
-      <div className="bg-green py-10">
-        <h1 className="text-center text-[26px] font-medium leading-[32px] text-white md:text-[32px]">
-          LAST DATE OF STUDENT REGISTRATION
-        </h1>
-      </div>
+    <div className="my-6 dark:bg-boxdark">
       <div className="hidden md:grid auto-cols-max grid-flow-col justify-center gap-5 py-8 text-center">
-        <div className="rounded-box flex flex-col bg-[#7D7D7D] px-12 py-6 pt-10">
-          <h1 className="countdown font-mono text-[28px] text-white md:text-[60px]">
+        <div className="rounded-box flex flex-col justify-center p-3 bg-[#7D7D7D] w-[80px]">
+          <h1 className="countdown font-mono text-[22px] text-white md:text-[42px]">
             15
           </h1>
-          <p className="pt-8 text-[18px] text-white md:text-[26px]">days</p>
+          <p className=" pt-2 text-[18px] text-white md:text-[16px]">days</p>
         </div>
-        <div className="rounded-box text-neutral-content flex flex-col bg-[#7D7D7D] px-12 py-6 pt-10">
-          <h1 className="countdown font-mono text-[28px] text-white md:text-[60px]">
+        <div className="rounded-box flex flex-col p-3 bg-[#7D7D7D] w-[80px]">
+          <h1 className="countdown font-mono text-[22px] text-white md:text-[42px]">
             10
           </h1>
-          <p className="pt-8 text-[18px] text-white md:text-[26px]">hours</p>
+          <p className="pt-2 text-[18px] text-white md:text-[16px]">hours</p>
         </div>
-        <div className="rounded-box text-neutral-content flex flex-col bg-[#7D7D7D] px-12 py-6 pt-10">
-          <h1 className="countdown font-mono text-[28px] text-white md:text-[60px]">
+        <div className="rounded-box flex flex-col p-3 bg-[#7D7D7D] w-[80px]">
+          <h1 className="countdown font-mono text-[22px] text-white md:text-[42px]">
             24
           </h1>
-          <p className="pt-8 text-[18px] text-white md:text-[26px]">min</p>
+          <p className="pt-2 text-[18px] text-white md:text-[16px]">min</p>
         </div>
-        <div className="rounded-box text-neutral-content flex flex-col bg-[#7D7D7D] px-12 py-6 pt-10">
-          <h1 className="countdown font-mono text-[28px] text-white md:text-[60px]">
+        <div className="rounded-box flex flex-col p-3 bg-[#7D7D7D] w-[80px]">
+          <h1 className="countdown font-mono text-[22px] text-white md:text-[42px]">
             34
           </h1>
-          <p className="pt-8 text-[18px] text-white md:text-[26px]">sec</p>
+          <p className="pt-2 text-[18px] text-white md:text-[16px]">sec</p>
         </div>
       </div>
 
